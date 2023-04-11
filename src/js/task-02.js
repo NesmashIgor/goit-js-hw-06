@@ -15,5 +15,3 @@ ingredients.forEach((element) => {
   itemEL.classList.add('item');
   listEL.append(itemEL);
 });
-
-console.log(listEL);
