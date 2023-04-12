@@ -13,8 +13,18 @@ const images = [
   },
 ];
 
+// const ul = document.querySelector('.gallery') 
+ 
+// images.forEach((item) => {
+//   ul.insertAdjacentHTML('afterbegin', `<li> <img src="${item.url}" alt="${item.alt}"></img></li>`)
+// });
+
 const ul = document.querySelector('.gallery') 
  
-images.forEach((item) => {
-  ul.insertAdjacentHTML('afterbegin', `<li> <img src="${item.url}" alt="${item.alt}"></img></li>`)
-});
+let arrLi = [] 
+ 
+  images.forEach((item, index) => { 
+ let li = `<li> <img src="${item.url}" alt="${item.alt}"></img></li>`
+     arrLi.push(li) 
+    })
+    ul.insertAdjacentHTML('afterbegin', `${arrLi}`)

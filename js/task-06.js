@@ -11,5 +11,5 @@ input.addEventListener('blur', () => {
     } else { 
         input.id = "validation-input"
     } 
- 
+
 })
