@@ -5,11 +5,11 @@ input.addEventListener('blur', () => {
     console.log(input.value.length === Number(input.getAttribute("data-length"))) 
  
     if (input.value.length === Number(input.getAttribute("data-length"))) { 
-        input.id = "validation-input.valid"; 
+        input.className = "valid"; 
     } else if (input.value.length !== 0) { 
-        input.id = "validation-input.invalid"; 
+        input.className = "invalid"; 
     } else { 
-        input.id = "validation-input"
+        input.id = "validation-input" 
     } 
-
+ 
 })
