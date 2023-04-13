@@ -16,7 +16,7 @@ const nameOfCollor = document.querySelector('.color')
 
 button.addEventListener("click", () => { 
     let randomColor = getRandomHexColor() 
-    document.body.style.backgroundColor = `${randomColor}`; 
+    document.body.style.backgroundColor = randomColor; 
     nameOfCollor.innerText = randomColor 
  
 })
